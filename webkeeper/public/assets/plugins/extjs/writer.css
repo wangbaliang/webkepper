@@ -1,0 +1,51 @@
+.icon-user {
+    background-image: url(images/search.png) !important;
+}
+
+.icon-search {
+    background-image: url(images/search.png) !important;
+}
+
+.icon-user-add {
+    background-image: url(images/add.png) !important;
+}
+
+.icon-save {
+    background-image: url(images/save.gif) !important;
+}
+
+.icon-reset {
+    background-image: url(images/stop.png) !important;
+}
+
+.icon-grid {
+    background-image: url(images/grid.png) !important;
+}
+
+.icon-add {
+    background-image: url(images/add.png) !important;
+}
+
+.icon-edit {
+    background-image: url(images/edit.png) !important;
+}
+.icon-cog-edit{
+    background-image: url(images/cog_edit.png) !important;
+}
+
+.icon-delete {
+    background-image: url(images/delete.png) !important;
+}
+.x-action-col-icon-my { line-height: 16px; height: 16px; font-size: 14px; color:#0066ff; margin-right: 5px;}
+.a_action { line-height: 14px; height: 14px; color:#0066ff; margin-right: 15px; text-decoration: underline; cursor: pointer; }
+.a_first { padding-left: 50px;}
+.grid_item { line-height: 40px; margin-bottom: 0px; text-indent: 2em; white-space:normal;}
+.lab_item { white-space:normal;}
+.grid_item .p_option { text-indent: 4em;}
+
+.view_html .p_option { text-indent: 2em;}
+.form_label { margin-top: 10px;margin-left: 44px;margin-bottom: 10px;}
+.bold {font-weight: bold }
+
+.label_container { line-height: 30px;}
+.label_title { text-align: right; width: 110px;}

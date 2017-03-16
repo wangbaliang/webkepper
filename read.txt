@@ -1,0 +1,81 @@
+mongo 开发版本2.4.9
+window
+
+cd /d/webdev/webkeeper/webkeeper
+python manage.py runserver 
+
+linux
+
+激活使用virtualenv环境：
+
+source /usr/ET/pyenv/webkeeper/bin/activate.csh
+
+调试server启动(假定代码放置在/data/djcode/mysite目录):
+
+cd /data/django/webkeeper
+python manage.py runserver
+
+
+新项目创建 在`` mysite`` 项目文件下输入下面的命令来创建`` books`` app：
+
+python manage.py startapp books
+
+python manage.py startapp home
+
+INSTALLED_APPS = (
+    # 'django.contrib.auth',
+    # 'django.contrib.contenttypes',
+    # 'django.contrib.sessions',
+    # 'django.contrib.sites',
+    'mysite.books',
+)
+
+修改为
+INSTALLED_APPS = (
+    # 'django.contrib.auth',
+    # 'django.contrib.contenttypes',
+    # 'django.contrib.sessions',
+    # 'django.contrib.sites',
+    'books',
+)
+
+现在我们可以创建数据库表了。 首先，用下面的命令验证模型的有效性：
+
+python manage.py check
+
+
+CommandError: App 'books' has migrations. Only the sqlmigrate and sqlflush commands can be used when an app has migrations.
+
+删除 migrations文件夹
+
+
+
+
+
+
+
+
+
+
+// 提交到服务器操作
+loginForm.form.doAction('submit', {
+	url : '{{ url('login') }}',// 文件路径
+	method : 'post',// 提交方法post或get
+	params : '',
+	// 提交成功的回调函数
+	success : function(form, action) {
+		if (action.result.data == 'ok') {// ???
+			window.location = 'main.html';
+		} else {
+			Ext.Msg.alert('登陆失败',
+					action.result.data);
+		}
+	},
+	// 提交失败的回调函数
+	failure: function(form, action) {
+		alert(action.message)
+		//Ext.Msg.alert('错误', action.result.message);
+	}
+});
+
+
